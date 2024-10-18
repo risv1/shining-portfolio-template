@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-12 w-[80vw] overflow-scroll text-black dark:text-white bg-white dark:bg-black">
+    <div class="col-span-12 xl:w-[80vw] lg:w-[80vw] w-full overflow-scroll text-black dark:text-white bg-white dark:bg-black">
         <div class="rounded p-6 lg:p-8">
             <div class="relative p-5">
                 <div class="absolute flex h-full w-full items-center justify-center left-0 top-0">

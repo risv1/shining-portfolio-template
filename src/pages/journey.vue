@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-12 w-[80vw] overflow-scroll text-black dark:text-white bg-white dark:bg-black">
+    <div class="col-span-12 xl:w-[80vw] lg:w-[80vw] w-full overflow-scroll text-black dark:text-white bg-white dark:bg-black">
         <div class="rounded p-6 lg:p-8">
             <div class="relative p-5">
                 <div class="absolute flex h-full w-full items-center justify-center left-0 top-0">
@@ -19,7 +19,7 @@
 
                         <div :class="[
                             'space-y-2 transition-all duration-300 group',
-                            index % 2 === 0 ? 'text-right' : 'md:col-start-3'
+                            index % 2 === 0 ? 'text-right' : 'col-start-3 lg:text-lg text-sm'
                         ]">
                             <div class="inline-flex items-center gap-2"
                                 :class="index % 2 === 0 ? 'flex-row-reverse' : ''">

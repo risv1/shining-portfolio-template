@@ -1,5 +1,5 @@
 <template>
-    <section class="relative w-screen h-[80vh] right-28 bottom-32">
+    <section class="relative w-screen h-[80vh] xl:right-28 lg:right-28 bottom-32">
         <StunningLightBar />
         <div class="absolute bottom-32 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5">
             <p

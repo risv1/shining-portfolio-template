@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-scroll min-h-screen w-[80vw] bg-white px-6 py-16 dark:bg-black">
+    <div class="overflow-scroll xl:w-[80vw] lg:w-[80vw] w-full min-h-screen bg-white px-6 py-16 dark:bg-black">
       <div class="mx-auto max-w-7xl">
         <h1 class="bg-gradient-to-r from-black dark:from-white to-emerald-500 dark:to-emerald-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-6xl">
           Tech Stack
