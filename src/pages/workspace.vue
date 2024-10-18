@@ -1,5 +1,14 @@
+<script setup lang="ts">
+import GodRay from '@/components/stunning/GodRay.vue'
+
+</script>
+
 <template>
-    <div class="col-span-12 xl:w-[80vw] lg:w-[80vw] w-full overflow-scroll text-black dark:text-white bg-white dark:bg-black">
+    <Head>
+        <Title>Portfolio | Workspace</Title>
+    </Head>
+    <main
+        class="col-span-12 xl:w-[80vw] lg:w-[80vw] w-full overflow-scroll text-black dark:text-white bg-white dark:bg-black">
         <div class="rounded p-6 lg:p-8">
             <div class="relative p-5">
                 <div class="absolute flex h-full w-full items-center justify-center left-0 top-0">
@@ -21,9 +30,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </template>
-
-<script setup lang="ts">
-import GodRay from '@/components/stunning/GodRay.vue'
-</script>

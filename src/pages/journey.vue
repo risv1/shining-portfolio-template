@@ -1,66 +1,3 @@
-<template>
-    <div class="col-span-12 xl:w-[80vw] lg:w-[80vw] w-full overflow-scroll text-black dark:text-white bg-white dark:bg-black">
-        <div class="rounded p-6 lg:p-8">
-            <div class="relative p-5">
-                <div class="absolute flex h-full w-full items-center justify-center left-0 top-0">
-                    <GodRay />
-                </div>
-                <div
-                    class="absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2 bg-gradient-to-b from-emerald-500/50 via-purple-500/50 to-blue-500/50 dark:from-emerald-400/30 dark:via-purple-400/30 dark:to-blue-400/30">
-                </div>
-                <div class="flex items-center gap-2 mb-12">
-                    <Icon name="ri:time-line" class="w-8 h-8" />
-                    <h1 class="font-medium text-2xl text-black dark:text-white z-10">My Journey</h1>
-                </div>
-                <div class="flex flex-col gap-16">
-                    <div v-for="(event, index) in journeyEvents" :key="event.year"
-                        class="relative grid grid-cols-[1fr,auto,1fr] items-center gap-4 md:gap-8"
-                        :class="{ 'opacity-60 hover:opacity-100 transition-opacity': !event.highlight }">
-
-                        <div :class="[
-                            'space-y-2 transition-all duration-300 group',
-                            index % 2 === 0 ? 'text-right' : 'col-start-3 lg:text-lg text-sm'
-                        ]">
-                            <div class="inline-flex items-center gap-2"
-                                :class="index % 2 === 0 ? 'flex-row-reverse' : ''">
-                                <Icon :name="event.icon"
-                                    class="h-5 w-5 text-secondary-foreground/70 dark:text-secondary-foreground/50 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors" />
-                                <span class="text-lg font-medium text-emerald-500 dark:text-emerald-400">
-                                    {{ event.year }}
-                                </span>
-                            </div>
-                            <h3
-                                class="text-lg font-medium group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors">
-                                {{ event.title }}
-                            </h3>
-                            <p
-                                class="text-secondary-foreground/80 dark:text-secondary-foreground/60 group-hover:text-secondary-foreground dark:group-hover:text-secondary-foreground/80 transition-colors">
-                                {{ event.description }}
-                            </p>
-                        </div>
-
-                        <div class="relative z-10 flex h-6 w-6 items-center justify-center">
-                            <div
-                                class="h-3 w-3 rounded-full border-2 border-emerald-500 bg-background dark:border-emerald-400 
-                                      group-hover:scale-150 group-hover:border-emerald-400 dark:group-hover:border-emerald-300 transition-all">
-                            </div>
-                            <div
-                                class="absolute h-6 w-6 rounded-full border-2 border-emerald-500/20 dark:border-emerald-400/20 
-                                      group-hover:border-emerald-500/40 dark:group-hover:border-emerald-400/40 transition-all">
-                            </div>
-                        </div>
-
-                        <div :class="[
-                            'space-y-2',
-                            index % 2 === 0 ? 'md:col-start-3' : ''
-                        ]"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
 <script setup lang="ts">
 import GodRay from '@/components/stunning/GodRay.vue'
 
@@ -131,3 +68,69 @@ type JourneyEvent = {
     highlight: boolean
 }
 </script>
+
+<template>
+    <Head>
+    <Title>Portfolio | Journey</Title>
+  </Head>
+    <main class="col-span-12 xl:w-[80vw] lg:w-[80vw] w-full overflow-scroll text-black dark:text-white bg-white dark:bg-black">
+        <div class="rounded p-6 lg:p-8">
+            <div class="relative p-5">
+                <div class="absolute flex h-full w-full items-center justify-center left-0 top-0">
+                    <GodRay />
+                </div>
+                <div
+                    class="absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2 bg-gradient-to-b from-emerald-500/50 via-purple-500/50 to-blue-500/50 dark:from-emerald-400/30 dark:via-purple-400/30 dark:to-blue-400/30">
+                </div>
+                <div class="flex items-center gap-2 mb-12">
+                    <Icon name="ri:time-line" class="w-8 h-8" />
+                    <h1 class="font-medium text-2xl text-black dark:text-white z-10">My Journey</h1>
+                </div>
+                <div class="flex flex-col gap-16">
+                    <div v-for="(event, index) in journeyEvents" :key="event.year"
+                        class="relative grid grid-cols-[1fr,auto,1fr] items-center gap-4 md:gap-8"
+                        :class="{ 'opacity-60 hover:opacity-100 transition-opacity': !event.highlight }">
+
+                        <div :class="[
+                            'space-y-2 transition-all duration-300 group',
+                            index % 2 === 0 ? 'text-right' : 'col-start-3 lg:text-lg text-sm'
+                        ]">
+                            <div class="inline-flex items-center gap-2"
+                                :class="index % 2 === 0 ? 'flex-row-reverse' : ''">
+                                <Icon :name="event.icon"
+                                    class="h-5 w-5 text-secondary-foreground/70 dark:text-secondary-foreground/50 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors" />
+                                <span class="text-lg font-medium text-emerald-500 dark:text-emerald-400">
+                                    {{ event.year }}
+                                </span>
+                            </div>
+                            <h3
+                                class="text-lg font-medium group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors">
+                                {{ event.title }}
+                            </h3>
+                            <p
+                                class="text-secondary-foreground/80 dark:text-secondary-foreground/60 group-hover:text-secondary-foreground dark:group-hover:text-secondary-foreground/80 transition-colors">
+                                {{ event.description }}
+                            </p>
+                        </div>
+
+                        <div class="relative z-10 flex h-6 w-6 items-center justify-center">
+                            <div
+                                class="h-3 w-3 rounded-full border-2 border-emerald-500 bg-background dark:border-emerald-400 
+                                      group-hover:scale-150 group-hover:border-emerald-400 dark:group-hover:border-emerald-300 transition-all">
+                            </div>
+                            <div
+                                class="absolute h-6 w-6 rounded-full border-2 border-emerald-500/20 dark:border-emerald-400/20 
+                                      group-hover:border-emerald-500/40 dark:group-hover:border-emerald-400/40 transition-all">
+                            </div>
+                        </div>
+
+                        <div :class="[
+                            'space-y-2',
+                            index % 2 === 0 ? 'md:col-start-3' : ''
+                        ]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

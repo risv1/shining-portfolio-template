@@ -54,17 +54,18 @@ const props = defineProps<{
                 '--sui-gb-via-color': '#4af',
                 '--sui-gb-to-color': '#f4a'
             }">
-        <div class="rounded p-4 sm:p-6 lg:p-8 flex flex-col gap-2">
-            <Icon name="ri:map-pin-line" class="w-6 h-6 sm:w-8 sm:h-8" />
-            <h1 class="font-medium text-xl sm:text-2xl">My Journey</h1>
-            <p class="text-secondary-foreground text-sm sm:text-base">
-                Born and raised in the scenic Pacific Northwest, my love for nature and adventure has taken me across
-                three continents. Each place I've visited has shaped who I am today and fueled my passion for
-                storytelling
-                through various creative mediums.
-            </p>
+                <div class="rounded p-4 sm:p-6 lg:p-8 flex flex-col gap-2">
+                    <Icon name="ri:map-pin-line" class="w-6 h-6 sm:w-8 sm:h-8" />
+                    <h1 class="font-medium text-xl sm:text-2xl">My Journey</h1>
+                    <p class="text-secondary-foreground text-sm sm:text-base">
+                        Born and raised in the scenic Pacific Northwest, my love for nature and adventure has taken me
+                        across
+                        three continents. Each place I've visited has shaped who I am today and fueled my passion for
+                        storytelling
+                        through various creative mediums.
+                    </p>
+                </div>
+            </StunningProgressiveGradientBorder>
         </div>
-        </StunningProgressiveGradientBorder>
-    </div>
     </div>
 </template>

@@ -20,8 +20,11 @@ const socials = [
 </script>
 
 <template>
-  <div class="overflow-scroll xl:w-[80vw] lg:w-[80vw] w-full bg-white dark:bg-black text-black dark:text-white">
+  <Head>
+    <Title>Portfolio | Home</Title>
+  </Head>
+  <main class="overflow-scroll xl:w-[80vw] lg:w-[80vw] w-full bg-white dark:bg-black text-black dark:text-white">
     <HomeHero />
     <HomeAbout :projects="projects" :socials="socials" />
-  </div>
+  </main>
 </template>
